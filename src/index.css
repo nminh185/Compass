@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: var(--font-family);
+  }
+}
+
+/* SAP 72 Font */
+@font-face {
+  font-family: '72';
+  src: url('https://unpkg.com/@sap-theming/theming-base-content/content/Base/baseLib/baseTheme/fonts/72-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: '72';
+  src: url('https://unpkg.com/@sap-theming/theming-base-content/content/Base/baseLib/baseTheme/fonts/72-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+:root[data-language='en'] {
+  --font-family: '72', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+}
+
+:root[data-language='vn'] {
+  --font-family: 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+}
